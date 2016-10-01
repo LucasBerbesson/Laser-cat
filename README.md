@@ -9,6 +9,8 @@ y_servo is attached to pin 9 (and +5V and GND) and moves in the Y plan.
 
 Laser is attached to pin 13 (and GND).
 
+Download the .ino file, open it inside the arduino software and send it to your arduino. 
+
 ## How it works : 
 The program randomly choose a new position for the laser inside a square you can define in the variables.
 It checks the new position is different from the old one of at least "minimal_movement".
