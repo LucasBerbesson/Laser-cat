@@ -59,8 +59,8 @@ void setup() {
   digitalWrite (13, HIGH);  // switch on  the laser
   
   //Place the servos in the center at the beginning 
-  y_servo.write(y_center); 
-  x_servo.write(x_center);     
+  y_servo.write(y_position); 
+  x_servo.write(x_position);     
 
 }
 
