@@ -3,9 +3,9 @@
 Pseudo-randomly moves a servo tower (on X and Y axis) and lights up a laser.
 
 ## Set up
-x_servo is attached to pin 6 (and +5V and GND) and moves in the X plan.
+x_servo is attached to pin 9 (and +5V and GND) and moves in the X plan.
 
-y_servo is attached to pin 9 (and +5V and GND) and moves in the Y plan.
+y_servo is attached to pin 6 (and +5V and GND) and moves in the Y plan.
 
 Laser is attached to pin 13 (and GND).
 
