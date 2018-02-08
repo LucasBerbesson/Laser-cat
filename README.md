@@ -17,7 +17,12 @@ It checks the new position is different from the old one of at least "minimal_mo
 It moves the tower to the new position and stays still for a time between min_freeze and max_freeze 
 (this aims to reproduce the behaviour of an insect landing somewhere for a bit and then flying off, 
 that's the variable you need to increase if your cat is fat...).
-Ans starts the process over and over again. 
+And starts the process over and over again. 
 
 Created 30 Sep 2016 by Lucas Berbesson for La Fabrique DIY
+Modified code 2 Feb 2018 by Stan Katsyuk
+
+## Note:
+The Laser_cat_mod.ino is mostly the same code but with the laser beint intermittently switched on/off every half second. This decreases the risk that your cat will get a laser beam shined in their eye. 
+
 
