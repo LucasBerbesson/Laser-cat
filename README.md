@@ -2,6 +2,9 @@
 ## Laser Tower for the CAT 
 Pseudo-randomly moves a servo tower (on X and Y axis) and lights up a laser.
 
+Watch it working : [https://www.youtube.com/watch?v=hHIrxL0giJQ](https://www.youtube.com/watch?v=hHIrxL0giJQ)
+
+
 ## Set up
 x_servo is attached to pin 9 (and +5V and GND) and moves in the X plan.
 
