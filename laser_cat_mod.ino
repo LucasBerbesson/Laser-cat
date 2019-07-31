@@ -1,12 +1,9 @@
 /*
-  Laser Tower for the CAT - LA FABRIQUE DIY
-  Forked by Stan Katsyuk - 2019
-
+  Forked from Laser Tower for the CAT - LA FABRIQUE DIY
   Pseudo-randomly moves a servo tower (on X and Y axis) and lights up a laser.
   x_servo is attached to pin 6 and moves in the X plan 
   y_servo is attached to pin 9 and moves in the Y plan 
   Laser is on pin 13
-  Microphone/SoundSensor is on A0
 
   HOW IT WORKS : 
   The program randomly choose a new position for the laser inside a square you can define below. 
@@ -17,6 +14,7 @@
   Ans starts the process over and over again. 
   
   Created 30 Sep 2016 by Lucas Berbesson
+  Modified 7 Feb 2018 by Stan Katsyuk 
 */
 
 
@@ -59,7 +57,6 @@ void setup() {
   y_servo.attach(6);  // attaches the y servo on pin 6 to the servo object
   x_servo.attach(9);  // attaches the x servo on pin 9 to the servo object
   pinMode (13, OUTPUT);
-  digitalWrite (13, HIGH);  // switch on  the laser
   
   //Place the servos in the center at the beginning 
   y_servo.write(y_position); 
@@ -68,6 +65,10 @@ void setup() {
 }
 
 void loop() {
+  digitalWrite (13, HIGH);  // switch on  the laser for half a second
+  delay(500);
+  digitalWrite (13, LOW);  // switch off  the laser for half a second
+  delay(500);
   movement_time = random(10,40);
   random_delay = random(min_freeze, max_freeze);
   x_new_position = random(min_x+minimal_movement, max_x-minimal_movement);
@@ -99,5 +100,4 @@ void loop() {
   delay(random_delay);
 
 }
-
 
