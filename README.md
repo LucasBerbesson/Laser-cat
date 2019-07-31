@@ -9,6 +9,8 @@ y_servo is attached to pin 6 (and +5V and GND) and moves in the Y plan.
 
 Laser is attached to pin 13 (and GND).
 
+SoundSensor attached to A0
+
 Download the .ino file, open it inside the arduino software and send it to your arduino. 
 
 ## How it works : 
