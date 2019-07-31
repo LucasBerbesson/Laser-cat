@@ -1,9 +1,12 @@
 /*
   Laser Tower for the CAT - LA FABRIQUE DIY
+  Forked by Stan Katsyuk - 2019
+
   Pseudo-randomly moves a servo tower (on X and Y axis) and lights up a laser.
   x_servo is attached to pin 6 and moves in the X plan 
   y_servo is attached to pin 9 and moves in the Y plan 
   Laser is on pin 13
+  Microphone/SoundSensor is on A0
 
   HOW IT WORKS : 
   The program randomly choose a new position for the laser inside a square you can define below. 
@@ -96,4 +99,5 @@ void loop() {
   delay(random_delay);
 
 }
+
 
